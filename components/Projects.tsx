@@ -5,25 +5,25 @@ const projects = [
   {
     title: "EyeWay - Pothole Detection System",
     description:
-      "AI-powered pothole detection system with real-time map visualization using embedded machine learning and IoT sensors.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     technologies: ["Python", "TensorFlow", "Raspberry Pi"],
   },
   {
     title: "SIRENA AI Products",
     description:
-      "Embedded machine learning solutions for various IoT applications, focusing on edge computing and real-time inference.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: ["C/C++", "Edge Impulse", "TensorFlow"],
   },
   {
     title: "Smart Cities Data Platform",
     description:
-      "Data science and analytics platform for LGU Iligan supporting smart cities initiatives and decision-making.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     technologies: ["Python", "OpenCV", "Cloud"],
   },
   {
     title: "AIoT Consulting Solutions",
     description:
-      "Custom embedded ML solutions for clients on Fiverr, including computer vision and sensor data analysis projects.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     technologies: ["Python", "TensorFlow", "Linux"],
   },
 ]

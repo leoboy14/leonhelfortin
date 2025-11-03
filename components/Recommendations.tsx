@@ -5,17 +5,17 @@ import { useState, useEffect } from "react"
 
 const recommendations = [
   {
-    text: "Leonhel's expertise in embedded machine learning and AIoT is exceptional. His work on the EyeWay project demonstrates his ability to combine hardware, software, and AI seamlessly.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     name: "Academic Colleague",
     title: "MSU-IIT Faculty",
   },
   {
-    text: "As CEO of SIRENA AI, Leonhel has shown remarkable leadership in developing embedded ML products and securing key partnerships. His technical skills and business acumen are impressive.",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     name: "Industry Partner",
     title: "IoT Solutions Provider",
   },
   {
-    text: "Working with Leonhel on smart cities initiatives has been amazing. His data science methodologies and project management skills have been crucial in securing funding and delivering results.",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
     name: "Government Partner",
     title: "LGU Iligan Official",
   },
