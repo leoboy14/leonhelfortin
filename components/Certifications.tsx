@@ -39,15 +39,15 @@ const certifications = [
   },
   {
     name: "Data Security",
-    issuer: "Certified (May 2020)",
+    issuer: "DICT (May 2020)",
   },
   {
     name: "Cybersecurity Webinar",
-    issuer: "Professional Development (2020)",
+    issuer: "DICT (2020)",
   },
   {
     name: "Digipar Webinar",
-    issuer: "Digipar (Oct 2020)",
+    issuer: "DICT (Oct 2020)",
   },
   {
     name: "The Hour of Code",
