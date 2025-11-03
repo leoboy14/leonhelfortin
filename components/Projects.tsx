@@ -31,30 +31,31 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects">
-      <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-        <div className="flex items-center justify-between mb-6">
+      <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm">
+        <div className="flex items-center justify-between mb-4 sm:mb-6">
           <div className="flex items-center gap-2">
             <FolderGit2 className="h-5 w-5 text-muted-foreground" />
-            <h2 className="text-xl font-bold">Recent Projects</h2>
+            <h2 className="text-lg sm:text-xl font-bold">Recent Projects</h2>
           </div>
-          <button className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1">
-            View All
+          <button className="text-xs sm:text-sm text-muted-foreground hover:text-foreground flex items-center gap-1">
+            <span className="hidden sm:inline">View All</span>
+            <span className="sm:hidden">All</span>
             <ChevronRight className="h-4 w-4" />
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-all duration-200 hover:border-primary/50"
+              className="border border-gray-200 rounded-lg p-3 sm:p-4 hover:shadow-md transition-all duration-200 hover:border-primary/50"
             >
-              <h3 className="font-semibold text-base mb-2">{project.title}</h3>
-              <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+              <h3 className="font-semibold text-sm sm:text-base mb-1.5 sm:mb-2">{project.title}</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3 leading-relaxed">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {project.technologies.map((tech, techIndex) => (
-                  <Badge key={techIndex} variant="secondary" className="text-xs px-2.5 py-0.5">
+                  <Badge key={techIndex} variant="secondary" className="text-xs px-2 sm:px-2.5 py-0.5">
                     {tech}
                   </Badge>
                 ))}

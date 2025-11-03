@@ -39,8 +39,8 @@
 /* Content Container - Mobile First */
 @layer components {
   .a4-container {
-    /* Mobile: full width with padding */
-    @apply w-full px-4;
+    /* Mobile: full width with comfortable padding */
+    @apply w-full px-4 sm:px-6;
 
     /* Desktop: Wider content width for better readability */
     @apply md:max-w-[960px] md:mx-auto;

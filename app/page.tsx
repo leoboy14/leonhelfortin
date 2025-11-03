@@ -11,14 +11,14 @@ import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 pb-12">
-      <div className="a4-container space-y-6">
+    <main className="min-h-screen bg-slate-50 pb-8 sm:pb-12">
+      <div className="a4-container space-y-4 sm:space-y-6">
         <Hero />
 
         {/* Two-column layout: About+TechStack on left, Experience on right */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-4 sm:gap-6">
           {/* Left column: About and TechStack */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <About />
             <TechStack />
           </div>

@@ -2,12 +2,12 @@ import { FileText } from "lucide-react"
 
 export default function About() {
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-      <div className="flex items-center gap-2 mb-4">
+    <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm">
+      <div className="flex items-center gap-2 mb-3 sm:mb-4">
         <FileText className="h-5 w-5 text-muted-foreground" />
-        <h2 className="text-xl font-bold">About</h2>
+        <h2 className="text-lg sm:text-xl font-bold">About</h2>
       </div>
-      <div className="space-y-4 text-sm text-foreground leading-relaxed">
+      <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-foreground leading-relaxed">
         <p>
           I&apos;m currently pursuing my Masters of Science in Computer Applications at MSU-Iligan Institute of Technology,
           building on my BS Computer Applications (Internet of Things) degree which I completed with Magna Cum Laude honors.

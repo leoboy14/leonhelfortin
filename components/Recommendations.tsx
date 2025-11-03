@@ -33,9 +33,9 @@ export default function Recommendations() {
   }, [])
 
   return (
-    <section id="recommendations" className="py-12 bg-slate-50">
+    <section id="recommendations" className="py-8 sm:py-12 bg-slate-50">
       <div>
-        <h2 className="text-2xl font-bold text-center mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8">
           Recommendations
         </h2>
         <div>
@@ -46,12 +46,12 @@ export default function Recommendations() {
             >
               {recommendations.map((rec, index) => (
                 <Card key={index} className="min-w-full bg-white">
-                  <CardContent className="pt-6 pb-8 px-8">
-                    <p className="text-base italic text-muted-foreground mb-6">
+                  <CardContent className="pt-5 sm:pt-6 pb-6 sm:pb-8 px-4 sm:px-8">
+                    <p className="text-sm sm:text-base italic text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
                       &quot;{rec.text}&quot;
                     </p>
                     <div>
-                      <p className="font-semibold text-sm">{rec.name}</p>
+                      <p className="font-semibold text-xs sm:text-sm">{rec.name}</p>
                       <p className="text-xs text-muted-foreground">{rec.title}</p>
                     </div>
                   </CardContent>
@@ -60,7 +60,7 @@ export default function Recommendations() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-2 mt-6">
+          <div className="flex justify-center gap-2 mt-4 sm:mt-6">
             {recommendations.map((_, index) => (
               <button
                 key={index}
