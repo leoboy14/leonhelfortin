@@ -10,20 +10,48 @@ const certifications = [
     issuer: "Google (2021)",
   },
   {
-    name: "Python Programming",
-    issuer: "Sololearn (2020)",
+    name: "Elements of AI - 2 ECTS Credits",
+    issuer: "University of Helsinki (Oct 2020)",
   },
   {
-    name: "C Programming",
-    issuer: "Sololearn (2020)",
+    name: "Python 3 Tutorial",
+    issuer: "SoloLearn (May 2020)",
   },
   {
-    name: "HTML",
-    issuer: "Sololearn (2020)",
+    name: "HTML Fundamentals",
+    issuer: "SoloLearn (Jun 2020)",
   },
   {
-    name: "Java Programming",
-    issuer: "Sololearn (2020)",
+    name: "Intro to CSS",
+    issuer: "SoloLearn (Apr 2020)",
+  },
+  {
+    name: "Java Tutorial",
+    issuer: "SoloLearn (Feb 2017)",
+  },
+  {
+    name: "Certified Ethical Hacking",
+    issuer: "CEH (2019)",
+  },
+  {
+    name: "Data Security",
+    issuer: "Certified (May 2020)",
+  },
+  {
+    name: "Cybersecurity Webinar",
+    issuer: "Professional Development (2020)",
+  },
+  {
+    name: "Digipar Webinar",
+    issuer: "Digipar (Oct 2020)",
+  },
+  {
+    name: "The Hour of Code",
+    issuer: "Code.org & Microsoft",
+  },
+  {
+    name: "Shopee Certification of Participation",
+    issuer: "Shopee (Aug 2020)",
   },
 ]
 
