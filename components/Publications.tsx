@@ -49,24 +49,24 @@ const highSchoolResearch = [
 export default function Publications() {
   return (
     <Card>
-      <CardHeader className="pb-4 sm:pb-6">
-        <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
-          <BookOpen className="h-5 w-5" />
+      <CardHeader className="pb-4">
+        <CardTitle className="flex items-center gap-2 text-base">
+          <BookOpen className="h-4 w-4" />
           <span>Research</span>
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-6 sm:space-y-8">
+      <CardContent className="space-y-6">
         <div>
-          <h2 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Publications</h2>
-          <div className="space-y-4 sm:space-y-6">
+          <h2 className="text-sm font-semibold mb-3">Publications</h2>
+          <div className="space-y-4">
             {publications.map((pub, index) => (
-              <div key={index} className="space-y-1.5">
-                <h3 className="text-sm sm:text-base font-semibold text-foreground leading-snug">
+              <div key={index} className="space-y-1">
+                <h3 className="text-sm font-semibold text-foreground leading-snug">
                   {pub.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-muted-foreground">{pub.authors}</p>
-                <p className="text-xs sm:text-sm text-muted-foreground italic">{pub.venue}</p>
-                <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                <p className="text-xs text-muted-foreground">{pub.authors}</p>
+                <p className="text-xs text-muted-foreground italic">{pub.venue}</p>
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <span>{pub.year}</span>
                   <span>•</span>
                   <span>{pub.citations} citations</span>
@@ -76,21 +76,21 @@ export default function Publications() {
           </div>
         </div>
         <div>
-          <h2 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">High School Research</h2>
-          <div className="space-y-4 sm:space-y-6">
+          <h2 className="text-sm font-semibold mb-3">High School Research</h2>
+          <div className="space-y-4">
             {highSchoolResearch.map((research, index) => (
-              <div key={index} className="space-y-1.5">
-                <h3 className="text-sm sm:text-base font-semibold text-foreground leading-snug">
+              <div key={index} className="space-y-1">
+                <h3 className="text-sm font-semibold text-foreground leading-snug">
                   {research.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{research.description}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed">{research.description}</p>
                 <Collapsible>
-                  <CollapsibleTrigger className="flex items-center gap-1 text-xs sm:text-sm text-primary hover:text-primary/80 font-medium mt-1">
+                  <CollapsibleTrigger className="flex items-center gap-1 text-xs text-primary hover:text-primary/80 font-medium mt-1">
                     <span>View Abstract</span>
                     <ChevronDown className="h-4 w-4" />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
-                    <p className="text-xs sm:text-sm text-muted-foreground mt-3 whitespace-pre-line leading-relaxed">
+                    <p className="text-xs text-muted-foreground mt-2 whitespace-pre-line leading-relaxed">
                       {research.abstract}
                     </p>
                   </CollapsibleContent>

@@ -1,3 +1,5 @@
+import { Card, CardContent } from "@/components/ui/card"
+
 const certificationCategories = [
   {
     category: "Professional Certifications",
@@ -80,26 +82,28 @@ const certificationCategories = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm">
+    <section id="certifications" className="bg-white border border-gray-200 rounded-xl p-4 sm:p-5 shadow-sm">
       <div>
-        <h2 className="text-lg sm:text-xl font-bold mb-6 sm:mb-8">
+        <h2 className="text-base font-bold mb-6">
           Certifications
         </h2>
-        <div className="space-y-6 sm:space-y-8">
+        <div className="space-y-6">
           {certificationCategories.map((category, categoryIndex) => (
             <div key={categoryIndex}>
-              <h3 className="text-sm sm:text-base font-semibold mb-3 text-muted-foreground uppercase tracking-wide">
+              <h3 className="text-xs font-semibold mb-3 text-muted-foreground uppercase tracking-wide">
                 {category.category}
               </h3>
-              <div className="space-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {category.certs.map((cert, certIndex) => (
-                  <div
+                  <Card
                     key={certIndex}
-                    className="border-l-2 border-primary/30 pl-4 py-2 hover:border-primary transition-colors"
+                    className="hover:border-primary transition-colors"
                   >
-                    <p className="font-semibold text-sm sm:text-base text-foreground">{cert.name}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">{cert.issuer}</p>
-                  </div>
+                    <CardContent className="p-3">
+                      <p className="font-semibold text-sm text-foreground mb-0.5">{cert.name}</p>
+                      <p className="text-xs text-muted-foreground">{cert.issuer}</p>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </div>

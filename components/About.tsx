@@ -2,29 +2,22 @@ import { FileText } from "lucide-react"
 
 export default function About() {
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm">
+    <div className="bg-white border border-gray-200 rounded-xl p-3 sm:p-5 shadow-sm">
       <div className="flex items-center gap-2 mb-3 sm:mb-4">
-        <FileText className="h-5 w-5 text-muted-foreground" />
-        <h2 className="text-lg sm:text-xl font-bold">About</h2>
+        <FileText className="h-4 w-4 text-muted-foreground" />
+        <h2 className="text-base font-bold">About</h2>
       </div>
-      <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-foreground leading-relaxed">
+      <div className="max-w-3xl space-y-3 text-sm text-foreground leading-relaxed">
         <p>
-          I&apos;m currently pursuing my Masters of Science in Computer Applications at MSU-Iligan Institute of Technology,
-          building on my BS Computer Applications (Internet of Things) degree which I completed with Magna Cum Laude honors.
-          As Chief Executive Officer of SIRENA AI since 2020, I develop and implement embedded machine learning products
-          and secure key partnerships in the AIoT space.
+          My tech journey began as a curious kid dismantling toys to understand how they worked. In high school, I explored networks and cybersecurity. When the pandemic hit in 2020, I shifted my focus to <span className="font-semibold">AI and TinyML</span>—and founded <span className="font-semibold">SIRENA AI</span> to develop embedded solutions for drowning detection.
         </p>
+
         <p>
-          My expertise lies in Embedded Machine Learning, Artificial Intelligence of Things, and Data Analytics. I serve
-          as Smart Cities Lead at the Center for Digital Iligan Innovation and Sustainability, where I create data science
-          methodologies and secure funding for smart cities initiatives. In 2022, I was selected as Philippine Representative
-          for Huawei Seeds for the Future program.
+          I&apos;m currently pursuing my <span className="font-semibold">Masters in Computer Applications</span> at MSU-IIT, building on my <span className="font-semibold">Magna Cum Laude</span> BS degree in IoT. As <span className="font-semibold">Smart Cities Lead</span> at the Center for Digital Iligan Innovation and Sustainability, I create data science methodologies using <span className="font-semibold">C/C++, Python, TensorFlow, and OpenCV</span> to solve real-world challenges.
         </p>
+
         <p>
-          I&apos;m passionate about building AIoT solutions using C/C++, Python, TensorFlow, and OpenCV. I founded Youth
-          Network Iligan and serve as Vice-President for External Affairs at DEVCON Iligan Chapter to foster tech innovation
-          in the community. My journey in technology began in 2014 with my first exposure to networks and VPN, evolving into
-          a career dedicated to embedded ML and AIoT solutions.
+          In 2022, I was selected as <span className="font-semibold">Philippine Representative for Huawei Seeds for the Future</span>. Beyond my technical work, I&apos;m committed to fostering tech innovation in Iligan City as founder of <span className="font-semibold">Youth Network Iligan</span> and <span className="font-semibold">Vice-President for External Affairs at DEVCON Iligan Chapter</span>.
         </p>
       </div>
     </div>

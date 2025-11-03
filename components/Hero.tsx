@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Mail, Calendar, Users } from "lucide-react"
+import { MapPin, Mail, Linkedin } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -36,6 +36,7 @@ export default function Hero() {
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 <Badge variant="secondary" className="text-xs">Researcher</Badge>
+                <Badge variant="secondary" className="text-xs">Project Manager</Badge>
                 <Badge variant="secondary" className="text-xs">Artificial Intelligence Engineer</Badge>
                 <Badge variant="secondary" className="text-xs">Embedded Machine Learning</Badge>
                 <Badge variant="secondary" className="text-xs">Computer Vision</Badge>
@@ -45,13 +46,28 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-2.5">
-              <Button className="bg-black hover:bg-black/90 text-white h-9 text-sm w-full sm:w-auto">
-                <Mail className="mr-2 h-4 w-4" />
-                Send Email
+              <Button
+                className="bg-black hover:bg-black/90 text-white h-9 text-sm w-full sm:w-auto"
+                asChild
+              >
+                <a href="mailto:lfortin.work@gmail.com">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Send Email
+                </a>
               </Button>
-              <Button variant="outline" className="h-9 text-sm w-full sm:w-auto">
-                <Users className="mr-2 h-4 w-4" />
-                LinkedIn
+              <Button
+                variant="outline"
+                className="h-9 text-sm w-full sm:w-auto"
+                asChild
+              >
+                <a
+                  href="https://www.linkedin.com/in/leonhel-fortin-92ba191aa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="mr-2 h-4 w-4" />
+                  LinkedIn
+                </a>
               </Button>
             </div>
           </div>
