@@ -73,8 +73,8 @@ const certificationCategories = [
         issuer: "Code.org & Microsoft",
       },
       {
-        name: "Shopee Certification of Participation",
-        issuer: "Shopee (Aug 2020)",
+        name: "Shopee Code League 2020 (Student Category)",
+        issuer: "Shopee (Jun 8 - Aug 8, 2020)",
       },
     ],
   },
