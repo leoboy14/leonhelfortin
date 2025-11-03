@@ -1,0 +1,68 @@
+import { Badge } from "@/components/ui/badge"
+import { FolderGit2, ChevronRight } from "lucide-react"
+
+const projects = [
+  {
+    title: "EyeWay - Pothole Detection System",
+    description:
+      "AI-powered pothole detection system with real-time map visualization using embedded machine learning and IoT sensors.",
+    technologies: ["Python", "TensorFlow", "Raspberry Pi"],
+  },
+  {
+    title: "SIRENA AI Products",
+    description:
+      "Embedded machine learning solutions for various IoT applications, focusing on edge computing and real-time inference.",
+    technologies: ["C/C++", "Edge Impulse", "TensorFlow"],
+  },
+  {
+    title: "Smart Cities Data Platform",
+    description:
+      "Data science and analytics platform for LGU Iligan supporting smart cities initiatives and decision-making.",
+    technologies: ["Python", "OpenCV", "Cloud"],
+  },
+  {
+    title: "AIoT Consulting Solutions",
+    description:
+      "Custom embedded ML solutions for clients on Fiverr, including computer vision and sensor data analysis projects.",
+    technologies: ["Python", "TensorFlow", "Linux"],
+  },
+]
+
+export default function Projects() {
+  return (
+    <section id="projects">
+      <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center gap-2">
+            <FolderGit2 className="h-5 w-5 text-muted-foreground" />
+            <h2 className="text-xl font-bold">Recent Projects</h2>
+          </div>
+          <button className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1">
+            View All
+            <ChevronRight className="h-4 w-4" />
+          </button>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-all duration-200 hover:border-primary/50"
+            >
+              <h3 className="font-semibold text-base mb-2">{project.title}</h3>
+              <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, techIndex) => (
+                  <Badge key={techIndex} variant="secondary" className="text-xs px-2.5 py-0.5">
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
