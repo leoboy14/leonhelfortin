@@ -30,10 +30,6 @@ const certifications = [
     issuer: "SoloLearn (Feb 2017)",
   },
   {
-    name: "Certified Ethical Hacking",
-    issuer: "CEH (2019)",
-  },
-  {
     name: "Penetration Testing and Ethical Hacking",
     issuer: "Cybrary - 20 CEU/CPE (13.5 hrs)",
   },
