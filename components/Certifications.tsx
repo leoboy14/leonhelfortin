@@ -34,6 +34,10 @@ const certifications = [
     issuer: "CEH (2019)",
   },
   {
+    name: "Penetration Testing and Ethical Hacking",
+    issuer: "Cybrary - 20 CEU/CPE (13.5 hrs)",
+  },
+  {
     name: "Data Security",
     issuer: "Certified (May 2020)",
   },
