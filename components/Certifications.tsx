@@ -1,4 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Award } from "lucide-react"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
 const certificationCategories = [
   {
@@ -52,16 +53,25 @@ const certificationCategories = [
         issuer: "Cybrary - 20 CEU/CPE (13.5 hrs)",
       },
       {
+        name: "Cybersecurity Webinar",
+        issuer: "DICT (May 2020)",
+      },
+      {
         name: "Data Security",
         issuer: "DICT (May 2020)",
       },
       {
-        name: "Cybersecurity Webinar",
-        issuer: "DICT (2020)",
-      },
-      {
         name: "Digipar Webinar",
         issuer: "DICT (Oct 2020)",
+      },
+    ],
+  },
+  {
+    category: "Design & Creative",
+    certs: [
+      {
+        name: "Adobe Digital Certificate",
+        issuer: "Adobe (May 2020)",
       },
     ],
   },
@@ -73,8 +83,20 @@ const certificationCategories = [
         issuer: "Code.org & Microsoft",
       },
       {
+        name: "Certificate of Appointment",
+        issuer: "KSTHS (2020)",
+      },
+      {
         name: "Shopee Code League 2020 (Student Category)",
-        issuer: "Shopee (Jun 8 - Aug 8, 2020)",
+        issuer: "Shopee (Jun - Aug 2020)",
+      },
+      {
+        name: "Certificate of Participation",
+        issuer: "Certified (Feb 2021)",
+      },
+      {
+        name: "Recognition Certificate",
+        issuer: "Certified (Aug 2022)",
       },
     ],
   },
@@ -82,11 +104,14 @@ const certificationCategories = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="bg-white border border-gray-200 rounded-xl p-4 sm:p-5 shadow-sm">
-      <div>
-        <h2 className="text-base font-bold mb-6">
-          Certifications
-        </h2>
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Award className="h-5 w-5" />
+          <span>Certifications</span>
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
         <div className="space-y-6">
           {certificationCategories.map((category, categoryIndex) => (
             <div key={categoryIndex}>
@@ -109,7 +134,7 @@ export default function Certifications() {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </CardContent>
+    </Card>
   )
 }

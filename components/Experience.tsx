@@ -49,9 +49,14 @@ const experiences = [
     company: "Fiverr (Freelancing)",
   },
   {
-    year: "2020",
-    title: "Started BS Computer Science",
+    year: "2020 - 2024",
+    title: "BS Computer Science",
     company: "University of the People",
+  },
+  {
+    year: "2020",
+    title: "Science, Technology, Engineering and Mathematics - With Honors",
+    company: "Kabasalan Science and Technology High School",
   },
   {
     year: "2017",
